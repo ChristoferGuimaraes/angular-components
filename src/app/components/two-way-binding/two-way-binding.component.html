@@ -1,0 +1,11 @@
+<div class="component-container">
+    <h1>
+        Two way data binding
+    </h1>
+    <form>
+        <input type="text" [(ngModel)]="name" name="name">
+    </form>
+    <div *ngIf="name !== ''">
+        O nome é: <h1>{{name}}</h1>
+    </div>
+</div>

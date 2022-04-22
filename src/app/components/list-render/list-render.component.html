@@ -1,0 +1,10 @@
+<div class="component-container">
+    <h1>List render</h1>
+    <div *ngFor="let animal of animals">
+        <li>Name: <strong>{{animal.name}}</strong></li>
+        <li>Type: <strong>{{animal.type}}</strong></li>
+        <button (click)="showDetails(animal)">Show age</button>
+    </div>
+
+    <h1>{{animalDetails}}</h1>
+</div>
